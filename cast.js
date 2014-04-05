@@ -33,7 +33,7 @@ function onMediaError() {
 
 function castMedia() {
     'use strict';
-    var imgURL = 'https://rudloff.pro/tests/piwigo/action.php?id=' + window.location.search.substr(2, 1) + '&part=e&download', mediaInfo = new chrome.cast.media.MediaInfo(imgURL, 'image/jpeg'), request = new chrome.cast.media.LoadRequest(mediaInfo);
+    var loc = window.location.pathname, imgURL = window.location.protocol + '//' + window.location.host + loc.substring(0, loc.lastIndexOf('/')) + '/action.php?id=' + window.location.search.substr(2, 1) + '&part=e&download', mediaInfo = new chrome.cast.media.MediaInfo(imgURL, 'image/jpeg'), request = new chrome.cast.media.LoadRequest(mediaInfo);
     console.log('Casting', imgURL);
     session.loadMedia(request, onMediaDiscovered.bind(this, 'loadMedia'), onMediaError);
 }
