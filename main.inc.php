@@ -4,6 +4,7 @@ Version: 0.1
 Plugin Name: ChromeCast
 Author: Pierre Rudloff <contact@rudloff.pro>
 Description: Cast your pictures to a ChromeCast
+Plugin URI: http://piwigo.org/ext/extension_view.php?eid=764
 */
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
