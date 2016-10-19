@@ -1,6 +1,6 @@
 <?php
 /*
-Version: 0.1.1
+Version: 0.1.2
 Plugin Name: ChromeCast
 Author: Pierre Rudloff <contact@rudloff.pro>
 Description: Cast your pictures to a ChromeCast
