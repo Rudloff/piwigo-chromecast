@@ -20,7 +20,7 @@
 20	// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 21	// | USA.                                                                  |
 22	// +-----------------------------------------------------------------------+
-23	
+23
 24	// Recursive call
 25	$url = '../';
 26	header( 'Request-URI: '.$url );

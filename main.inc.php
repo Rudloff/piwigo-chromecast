@@ -8,7 +8,7 @@ Plugin URI: http://piwigo.org/ext/extension_view.php?eid=764
 */
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
- 
+
 add_event_handler('loc_begin_page_tail', 'cast_add_api');
 function cast_add_api()
 {
