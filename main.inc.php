@@ -7,13 +7,15 @@ Description: Cast your pictures to a ChromeCast
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=764
 */
 
-if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
- 
+if (!defined('PHPWG_ROOT_PATH')) {
+    die('Hacking attempt!');
+}
+
 add_event_handler('loc_begin_page_tail', 'cast_add_api');
 function cast_add_api()
 {
-  global $page, $template;
-  $template->append('footer_elements', '
+    global $page, $template;
+    $template->append('footer_elements', '
     <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
     <script src="plugins/chromecast/cast.js"></script>
   ');
@@ -29,5 +31,3 @@ function cast_add_btn()
         <link rel="stylesheet" href="plugins/chromecast/style.css" />
     ');
 }
-
-?>
